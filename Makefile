@@ -2,9 +2,10 @@
 
 PREFIX ?= ~/.local
 BINDIR := ${PREFIX}/bin
+CFLAGS := -Wall -Wextra -pedantic -ansi
 
 all:
-	${CC} -Wall -Wextra -pedantic -ansi tux_netspeed.c -o tux_netspeed
+	${CC} ${CFLAGS} tux_netspeed.c -o tux_netspeed
 
 install: all
 	mkdir -p ${DESTDIR}${BINDIR}
