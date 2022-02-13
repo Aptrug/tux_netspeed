@@ -10,4 +10,6 @@
 # Integration with Tmux
 1. Provided that `tux_netspeed` is installed, you can add the following
  to Tmux's configuration file:
-	set-option -g status-right '#(tux_netspeed)'
+```
+set-option -g status-right '#(tux_netspeed)'
+```
