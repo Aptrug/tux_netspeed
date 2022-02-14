@@ -2,7 +2,7 @@
 
 PREFIX ?= ~/.local
 BINDIR := ${PREFIX}/bin
-CFLAGS := -Wall -Wextra -pedantic -ansi
+CFLAGS := -Wall -Wextra -Wno-cast-align -pedantic -ansi
 
 all:
 	${CC} ${CFLAGS} tux_netspeed.c -o tux_netspeed
